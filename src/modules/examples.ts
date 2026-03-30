@@ -665,7 +665,7 @@ export class HelperExampleFactory {
               } catch (error) {
                 // 弹出错误
                 alert(getString("file-is-open"));
-                continue; // 弹出错误后直接进入下一次循环
+                continue; // 弹出错误后直接进入下次循环
               }
               try {
                 await OS.File.removeEmptyDir(parentDir);
@@ -693,7 +693,7 @@ export class HelperExampleFactory {
             } catch (error) {
               // 弹出错误
               alert(getString("file-is-open"));
-              continue; // 弹出错误后直接进入下一次循环
+              continue; // 弹出错误后直接进入下次循环
             }
             try {
               await OS.File.removeEmptyDir(parentDir);
